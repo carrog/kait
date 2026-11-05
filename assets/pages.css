@@ -278,3 +278,54 @@ legend { padding: 0; font-weight: 700; font-size: 16px; margin-bottom: 8px; }
 .toc-box a:hover { color: var(--teal); text-decoration: underline; }
 .article > .next-grid { margin-top: 48px; }
 .article td, .article th { white-space: normal; }
+.doc-groups section + section { margin-top: 44px; }
+.doc-groups h2 { font-size: 22px; letter-spacing: -.02em; margin-bottom: 12px; }
+.article td img { max-width: 100%; height: auto; }
+/* 게시판 목록 공통 UI */
+.board { min-width: 0; align-self: start; }
+.board-top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.board-count { font-size: 16px; color: var(--ink-soft); }
+.board-count strong { color: var(--teal); }
+.board-search { display: flex; gap: 8px; background: transparent; padding: 0; border-radius: 0; align-content: normal; }
+.board-search select, .board-search input { min-height: 44px; font: inherit; font-size: 16px; color: inherit; border: 1.5px solid #9aa7ad; border-radius: 10px; background: var(--white); padding: 8px 12px; }
+.board-search input { width: 240px; min-width: 0; }
+.board-search .btn { width: auto; min-height: 44px; padding: 8px 18px; border-radius: 10px; }
+.board-table { table-layout: fixed; border-top: 2px solid var(--ink); }
+.board-table th, .board-table td { padding: 15px 10px; }
+.board-table thead th { background: var(--surface); text-align: center; }
+.board-table thead th:nth-child(2) { text-align: left; }
+.board-table .col-no { width: 72px; text-align: center; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.board-table .col-writer { width: 92px; text-align: center; color: var(--ink-soft); }
+.board-table .col-date { width: 118px; text-align: center; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.board-table .col-views { width: 84px; text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.board-table thead .col-views { text-align: right; }
+.col-title a { text-decoration: none; font-weight: 600; font-size: 17px; line-height: 1.5; }
+.col-title a:hover { color: var(--teal); text-decoration: underline; }
+.board-table tbody tr:hover { background: var(--surface); }
+.board-table .is-notice { background: var(--mist); }
+.board-table .is-notice .col-title a { font-weight: 800; }
+.attach { display: inline-block; margin-left: 8px; font-size: 13px; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; vertical-align: 2px; }
+.board-empty { padding: 56px 16px; text-align: center; color: var(--ink-soft); border-block: 1px solid var(--line); }
+.board-bottom { position: relative; margin-top: 24px; min-height: 48px; }
+.board-bottom .pager { margin-top: 0; }
+.board-write { position: absolute; right: 0; top: 0; }
+
+@media (max-width: 720px) {
+  .board-search { width: 100%; }
+  .board-search select { flex: none; width: 84px; }
+  .board-search input { flex: 1 1 0; width: 100%; }
+  .board-table, .board-table tbody { display: block; }
+  .board-table thead { display: none; }
+  .board-table tr { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 16px 4px; border-bottom: 1px solid var(--line); }
+  .board-table tr[hidden] { display: none; }
+  .board-table td { display: block; width: auto !important; padding: 0; border: 0; text-align: left !important; font-size: 14px; }
+  .board-table td.col-title { order: -1; flex: 1 0 100%; font-size: 16px; }
+  .board-table td.col-no:not(:has(.tag)) { display: none; }
+  .board-table td.col-views::before { content: "조회 "; }
+  .board-bottom { display: grid; gap: 16px; }
+  .board-write { position: static; width: 100%; }
+}
+/* 게시판 메뉴 빈 페이지 */
+.board-placeholder { min-height: 320px; display: grid; align-content: center; justify-items: center; gap: 8px; text-align: center; padding: 32px; border: 1.5px dashed #9aa7ad; border-radius: 16px; color: var(--ink-soft); align-self: start; }
+.board-placeholder .placeholder-title { font-size: 20px; font-weight: 800; color: var(--ink); }
+.board-placeholder a { color: var(--teal); font-weight: 600; }

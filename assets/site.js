@@ -1,6 +1,6 @@
 // 모바일 메뉴: 항목을 누르면 닫기
 document.querySelectorAll('.menu-toggle a').forEach(function (a) {
-  a.addEventListener('click', function () { a.closest('details').removeAttribute('open'); });
+  a.addEventListener('click', function () { a.closest('.menu-toggle').removeAttribute('open'); });
 });
 
 // 탭: 주소의 #값으로 바로 열 수 있습니다 (자료실)

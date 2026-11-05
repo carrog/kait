@@ -251,3 +251,30 @@ legend { padding: 0; font-weight: 700; font-size: 16px; margin-bottom: 8px; }
   .contact-strip { grid-template-columns: minmax(0, 1fr); }
   .place-actions .btn { width: 100%; }
 }
+
+/* 청각이상: 문서 목록과 글 본문 */
+.doc-rows { border-top: 2px solid var(--ink); align-self: start; }
+.doc-row { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; padding: 20px 4px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.doc-row:hover strong { color: var(--teal); text-decoration: underline; }
+.doc-num { color: var(--ink-soft); font-size: 15px; font-variant-numeric: tabular-nums; padding-top: 3px; }
+.doc-row strong { display: block; font-size: 19px; line-height: 1.45; letter-spacing: -.01em; }
+.doc-excerpt { display: block; margin-top: 4px; font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
+.page-head h1.post-title { font-size: clamp(28px, 3.8vw, 44px); }
+.article h2 { margin-top: 44px; font-size: clamp(23px, 2.6vw, 28px); }
+.article h3 { margin-top: 32px; }
+.article h4 { margin: 24px 0 6px; font-size: 18px; line-height: 1.45; }
+.article > :first-child { margin-top: 0; }
+.article p + p { margin-top: 14px; }
+.article h2 + p, .article h3 + p, .article h4 + p { margin-top: 0; }
+.doc-figure { margin: 24px 0; }
+.doc-figure img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.prose .doc-figure figcaption { margin: 0 0 10px; font-size: 16px; font-weight: 700; color: var(--ink); }
+.prose .caption-line { margin-top: 24px; font-weight: 700; font-size: 16px; }
+.plain-list { margin-top: 12px; }
+.plain-list li { padding: 5px 0; font-size: 18px; line-height: 1.65; }
+.toc-box { background: var(--surface); border-radius: 14px; padding: 18px 22px; margin-bottom: 32px; }
+.toc-box .toc-title { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
+.toc-box a:not(.btn) { display: block; padding: 4px 0; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+.toc-box a:hover { color: var(--teal); text-decoration: underline; }
+.article > .next-grid { margin-top: 48px; }
+.article td, .article th { white-space: normal; }

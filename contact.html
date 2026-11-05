@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>상담 신청 | 한국 베라르 AIT 연구소 시안</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div class="draft">디자인 시안입니다. 문구와 수치는 공개 전 연구소 확인이 필요합니다.</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="index.html" aria-label="한국 베라르 AIT 연구소 홈">
+      <strong><span>한국</span> <span>베라르 AIT</span> <span>연구소</span></strong>
+      <small>The Korean Institute of Berard Auditory Integration Training</small>
+    </a>
+    <nav class="main-nav" aria-label="주 메뉴">
+      <ul>
+        <li><a href="ait.html">AIT 알아보기</a></li>
+        <li><a href="research.html">연구·사례</a></li>
+        <li><a href="library.html">자료실</a></li>
+        <li><a href="index.html#pro">전문가 과정</a></li>
+        <li><a href="about.html">연구소</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="contact.html">상담 신청</a>
+    <details class="menu-toggle">
+      <summary>메뉴</summary>
+      <ul>
+        <li><a href="ait.html">AIT 알아보기</a></li>
+        <li><a href="research.html">연구·사례</a></li>
+        <li><a href="library.html">자료실</a></li>
+        <li><a href="index.html#pro">전문가 과정</a></li>
+        <li><a href="about.html">연구소</a></li>
+        <li><a href="contact.html">상담 신청</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <ol class="crumb"><li><a href="index.html">홈</a></li><li>상담 신청</li></ol>
+    <h1>편하게 물어보세요</h1>
+    <p class="lead">작성하신 내용은 연구소에만 전달되며, 다른 방문자에게 공개되지 않습니다.</p>
+  </div>
+</div>
+
+<section class="page-section" aria-label="상담 신청 양식">
+  <div class="wrap contact-layout">
+    <div>
+      <form id="consult-full" novalidate>
+        <label>보호자 성함
+          <input type="text" name="name" autocomplete="name" aria-describedby="name-error">
+          <span class="error" id="name-error"></span>
+        </label>
+        <label>연락처
+          <input type="tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="010-0000-0000" aria-describedby="tel-error">
+          <span class="error" id="tel-error"></span>
+        </label>
+        <fieldset>
+          <legend>희망 연구소 <span class="optional">(선택)</span></legend>
+          <div class="radios">
+            <label><input type="radio" name="branch" value="서울">서울</label>
+            <label><input type="radio" name="branch" value="대구">대구</label>
+            <label><input type="radio" name="branch" value="미정">아직 모르겠어요</label>
+          </div>
+        </fieldset>
+        <label><span>아이 나이 <span class="optional">(선택)</span></span>
+          <input type="text" name="age" inputmode="numeric" placeholder="예: 7세">
+        </label>
+        <label>궁금한 점
+          <textarea name="message" aria-describedby="message-error" placeholder="걱정되는 모습이나 궁금한 점을 편하게 적어 주세요. 아이의 이름은 적지 않으셔도 됩니다."></textarea>
+          <span class="error" id="message-error"></span>
+        </label>
+        <p class="privacy-box"><strong>개인정보 수집·이용 안내</strong><br>수집 항목: 성함, 연락처, 상담 내용 · 목적: 상담 답변 · 보유 기간: 연구소 확인 후 기재</p>
+        <label class="consent"><input type="checkbox" name="agree" aria-describedby="agree-error"><span>위 내용을 확인했으며 개인정보 수집·이용에 동의합니다.</span></label>
+        <span class="error" id="agree-error"></span>
+        <button class="btn btn-primary" type="submit">상담 신청하기</button>
+      </form>
+      <div class="done" id="consult-done" tabindex="-1" hidden>
+        <h2>신청 화면 확인 완료</h2>
+        <p>실제 사이트에서는 여기에 접수 완료 안내가 표시됩니다. 시안이라 내용은 어디에도 전송되지 않았습니다.</p>
+        <div class="actions"><a class="btn btn-ghost" href="index.html">홈으로</a></div>
+      </div>
+    </div>
+
+    <aside class="side-stack">
+      <div class="side-card">
+        <h2>전화 상담</h2>
+        <a class="phone" href="tel:01035170654">010-3517-0654</a>
+        <dl class="hours">
+          <dt>월–토</dt><dd>08:00–19:00</dd>
+          <dt>일요일</dt><dd>13:30–18:00</dd>
+        </dl>
+      </div>
+      <div class="side-card">
+        <h2>상담 전에 읽어 보세요</h2>
+        <ul>
+          <li><a href="library.html#faq">상담비와 검사비 →</a></li>
+          <li><a href="ait.html#process">진행 과정 →</a></li>
+          <li><a href="about.html#location">서울·대구 오시는 길 →</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong>한국 베라르 AIT 연구소</strong><br>
+        T. 010-3517-0654 · <a href="mailto:kmok5959@hanmail.net">kmok5959@hanmail.net</a>
+      </div>
+      <nav aria-label="바닥글 메뉴">
+        <ul>
+          <li><a href="ait.html">AIT 알아보기</a></li>
+          <li><a href="research.html">연구·사례</a></li>
+          <li><a href="library.html">자료실</a></li>
+          <li><a href="about.html">연구소</a></li>
+          <li><a href="contact.html">개인정보 처리방침</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="disclaimer">이 사이트의 정보는 일반적인 안내를 위한 것이며 의학적 진단이나 치료를 대신하지 않습니다.</p>
+  </div>
+</footer>
+
+<nav class="action-bar" aria-label="빠른 연락">
+  <a href="tel:01035170654">전화</a>
+  <a href="about.html#location">오시는 길</a>
+  <a class="cta" href="contact.html">상담 신청</a>
+</nav>
+<script src="assets/site.js"></script>
+</body>
+</html>
